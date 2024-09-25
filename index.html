@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="AppBackground">
+        <div>
+          <img src="/backgrounds/01.jpg" alt="">
+          <img src="/backgrounds/02.jpg" alt="">
+          <img src="/backgrounds/03.jpg" alt="">
+          <img src="/backgrounds/04.jpg" alt="">          
+        </div>
+
+      </div>
+      <header>
+        <div id="WeatherBlock">
+          <p id="WeatherBlockCity"></p>
+          <p id="WeatherBlockWeather">
+            <span id="WeatherBlockWeatherTemp"></span>
+            |
+            <span id="WeatherBlockWeatherInfo"></span>
+          </p>
+        </div>
+        <div id="TimeBlock">
+          <time id="TimeBlockDay"></time>
+          <time id="TimeBlockHours"></time>
+        </div>
+      </header>
+      <div id="TaskBlock">
+        <input type="text" id="TaskBlockInput">
+        <p id="InputErrorText">Поле не должно быть пустым!!</p>
+        <button id="DeleteAllCheckedTasks">удалить выполненные задачи</button>
+        <div id="TaskBlockList">
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/scripts/timeBlock.ts"></script>
+    <script type="module" src="/src/scripts/taskBlock.ts"></script>
+    <script type="module" src="/src/scripts/background.ts"></script>
+    <script type="module" src="/src/scripts/weatherBlock.ts"></script>
+  </body>
+</html>

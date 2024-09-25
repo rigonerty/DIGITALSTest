@@ -1,0 +1,11 @@
+#TimeBlock{
+    display: flex;
+    background: rgba(80, 80, 80, 0.7);
+    padding: 1rem;
+    align-items: center;
+    border-radius: .6rem;
+    flex-direction: column;
+    >time:first-child{
+        margin-bottom: .5rem;
+    }
+}

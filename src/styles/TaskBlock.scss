@@ -1,0 +1,67 @@
+#TaskBlock{
+    display: flex;
+    background: rgba(80, 80, 80, 0.7);
+    border-radius: .5rem;
+    padding: .5rem 0;
+    flex-direction: column;
+    align-items: center;
+    #InputErrorText{
+        margin: .5rem 0;
+        visibility: hidden;
+        color: rgb(214, 0, 0);
+        &.visible{
+            visibility: visible;
+        }
+    }
+    input{
+        width: 50%;
+        color: black;
+        padding: .5rem 1rem;
+        border: 1px solid blue;
+        outline: none;
+        border-radius: 10rem;
+    }
+    #TaskBlockList{
+        margin-top: 1rem;
+        width: 50%;
+        overflow: auto;
+        height: 50vh;
+        label{
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            padding: .5rem;
+            border: 1px solid transparent;
+            &.checked{
+                background: rgba(48, 48, 48, 0.5);
+                p {text-decoration: line-through;}
+            }
+            &:hover{
+                border-color: blue;
+            }
+            >input{
+                width: 1rem;
+            }
+            >p{
+                width: 80%;
+                text-align: center;
+                word-break: break-all;
+            }
+            >button{
+                // flex: 0 0 auto;
+                display: flex;
+                margin: auto 0;
+                width: 2rem;
+                height: 2rem;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                border: 1px solid white;
+                &:hover{
+                    border-color: blue;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
